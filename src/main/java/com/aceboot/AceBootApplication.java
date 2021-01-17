@@ -1,5 +1,6 @@
 package com.aceboot;
 
+import com.aceboot.config.BrowserConfig;
 import com.aceboot.util.ApplicationContextUtil;
 import com.aceboot.util.IpUtil;
 import com.aceboot.util.MapUtil;
@@ -16,7 +17,7 @@ public class AceBootApplication {
 
     public static void main(String[] args) {
         applicationContext = SpringApplication.run(AceBootApplication.class, args);
-       // BrowserConfig.OpenDefaultBrowser();
+       BrowserConfig.OpenDefaultBrowser();
        // BrowserConfig.OpenSwaggerPage();
         //print all application context bean name
         ApplicationContextUtil.printAllBeanName(applicationContext);

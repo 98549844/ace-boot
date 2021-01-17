@@ -16,23 +16,23 @@ public class BrowserConfig {
     static String url = "http://localhost:8088/";
     static String SwaggerUrl = "http://localhost:8088/swagger-ui.html";
     // static String browser = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe ";
-    static String browser = "/Users/garlam/Library/Application Support/Google/Chrome/Default";
+    static String browser = "/Applications/Google Chrome.app";
 
     /**
      * 打开默认Browser
      */
-/*
+
     public static void OpenDefaultBrowser() {
         try {
             ProcessBuilder proc = new ProcessBuilder(browser, url);
             proc.start();
             BrowserConfig config = new BrowserConfig();
-            config.PrintUrl("WELCOME PAGE:\t",url);
+            config.PrintUrl("WELCOME PAGE: ", url);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-*/
+
 
     /**
      * 打开默认Browser
