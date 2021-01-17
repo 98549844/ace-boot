@@ -1,5 +1,7 @@
 package com.aceboot.util;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
@@ -14,6 +16,9 @@ import java.util.Random;
 //POI简单实例
 //https://blog.csdn.net/yk10010/article/details/81911997
 public class ExcelUtil {
+    private final Log log = LogFactory.getLog(this.getClass());
+
+
     final static String path = "C:\\spring-boot\\";
     final static String fileName = "excel.xls";
     static HSSFWorkbook workbook;

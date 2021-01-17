@@ -9,7 +9,8 @@ import java.util.*;
 
 
 public class FileUtil {
-    static private Log log = LogFactory.getLog(LogUtil.class);
+    static private Log log = LogFactory.getLog(FileUtil.class);
+
 
     static String path = "";
     static String fileName = "";
@@ -225,6 +226,7 @@ public class FileUtil {
                 isOK = true;
             } else {
                 log.info("File can't write");
+
                 isOK = false;
             }
         }

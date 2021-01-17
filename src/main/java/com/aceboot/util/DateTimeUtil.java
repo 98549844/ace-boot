@@ -1,6 +1,9 @@
 package com.aceboot.util;
 
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.text.SimpleDateFormat;
@@ -9,6 +12,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class DateTimeUtil {
+    private final Log log = LogFactory.getLog(this.getClass());
 
     public static Date convertXMLGregorianCalendarToDate(XMLGregorianCalendar cal) {
         return cal.toGregorianCalendar().getTime();

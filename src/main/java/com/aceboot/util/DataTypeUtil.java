@@ -1,9 +1,13 @@
 package com.aceboot.util;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
 public class DataTypeUtil {
+    private final Log log = LogFactory.getLog(this.getClass());
 
     public static double roundUpByDigit(double d, int digit) {
         return new BigDecimal(d).setScale(digit, BigDecimal.ROUND_HALF_UP).doubleValue();

@@ -1,9 +1,14 @@
 package com.aceboot.util;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import java.math.BigDecimal;
 import java.util.regex.Pattern;
 
 public class BigDecimalUtil {
+    private final Log log = LogFactory.getLog(this.getClass());
+
     private static boolean checkNull(Object obj) {
         boolean check = false;
         if (obj == null) {

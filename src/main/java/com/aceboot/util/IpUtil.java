@@ -1,5 +1,7 @@
 package com.aceboot.util;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.boot.web.context.WebServerInitializedEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
@@ -12,6 +14,8 @@ import java.util.Map;
 //@Component("自定义beanName")
 @Component
 public class IpUtil implements ApplicationListener<WebServerInitializedEvent> {
+    private final Log log = LogFactory.getLog(this.getClass());
+
     public static int Port;
     public static String ip;
     public static String hostName;
@@ -26,7 +30,9 @@ public class IpUtil implements ApplicationListener<WebServerInitializedEvent> {
 
     }
 
-    public static String getHostName() {
+    public  String getHostName() {
+        log.info(Thread.currentThread().getStackTrace()[1].getMethodName()+": ");
+
         IpUtil u = new IpUtil();
         Map m = u.getClientHostInfo();
         hostName = (String) m.get("hostName");
@@ -35,6 +41,8 @@ public class IpUtil implements ApplicationListener<WebServerInitializedEvent> {
 
 
     public Map getClientHostInfo() {
+        log.info(Thread.currentThread().getStackTrace()[1].getMethodName()+": ");
+
         InetAddress address = null;
         try {
             address = InetAddress.getLocalHost();
@@ -58,6 +66,9 @@ public class IpUtil implements ApplicationListener<WebServerInitializedEvent> {
 
     @Override
     public void onApplicationEvent(WebServerInitializedEvent event) {
+
+        log.info(Thread.currentThread().getStackTrace()[1].getMethodName()+": ");
+
         this.Port = event.getWebServer().getPort();
     }
 

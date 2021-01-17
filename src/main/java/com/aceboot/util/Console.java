@@ -1,6 +1,11 @@
 package com.aceboot.util;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 public class Console {
+    private final Log log = LogFactory.getLog(this.getClass());
+
     public static final int WHITE = 30;             // 白色
     public static final int WHITE_BACKGROUND = 40;  // 白色背景
     public static final int RED = 31;               // 红色
