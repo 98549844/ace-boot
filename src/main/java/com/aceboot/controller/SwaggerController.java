@@ -1,6 +1,7 @@
 package com.aceboot.controller;
 
 import com.aceboot.entity.vo.SwaggerVO;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController()
 @RequestMapping("/swagger")
+@Api(tags = "---SWAGGER---")
 public class SwaggerController {
     private final Log log = LogFactory.getLog(this.getClass());
 
@@ -31,12 +33,12 @@ public class SwaggerController {
         return get;
     }
 
-    @ApiOperation(value = "swagger post body", notes = "{\n" + "  \"swaggerContent\": \"内容\",\n" + "  \"swaggerDescription\": \"Json描述\",\n" + "  \"swaggerId\": 0,\n" + "  \"swaggerTitle\": \"Json标题\"\n" + "}")
-    @ResponseBody
+    @ApiOperation(value = "swagger post body", notes = "{\n" + "    \"swaggerContent\": \"---CONTENT---\",\n" + "    \"swaggerDescription\": \"---DESCRIPTION---\",\n" + "    \"swaggerId\": 0,\n" + "    \"swaggerTitle\": \"---TITLE---\"\n" + "}")
     @RequestMapping(method = RequestMethod.POST)
     public SwaggerVO postSwagger(@RequestBody SwaggerVO swaggerVO) {
         log.info(Thread.currentThread().getStackTrace()[1].getMethodName() + ": ");
         String post = "Hello World ! POST";
+        System.out.println(post);
         swaggerVO.setSwaggerDescription(post);
         return swaggerVO;
     }
@@ -45,8 +47,6 @@ public class SwaggerController {
     @RequestMapping(method = RequestMethod.PUT)
     public String putSwagger() {
         log.info(Thread.currentThread().getStackTrace()[1].getMethodName() + ": ");
-
-
         String put = "Hello World ! PUT";
         return put;
     }
