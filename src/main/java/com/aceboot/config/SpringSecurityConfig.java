@@ -9,32 +9,24 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @EnableWebSecurity
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
-    //
+    //RESTful and CRSF have conflict
+    //CRSF default support GET,head,trace,options,biy not support post
+    //in security config, disable .and().csrf().disable()
+    //refer to hankuikui/p/14024637.html
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/swagger-ui.html").permitAll()
-                //.antMatchers("/swagger-ui.html#/**").permitAll()
                 .antMatchers("/webjars/**").permitAll()
                 .antMatchers("/swagger-resources/**").permitAll()
                 .antMatchers("/v2/*").permitAll()
                 .antMatchers("/csrf").permitAll()
                 .antMatchers("/").permitAll()
-                .anyRequest().authenticated().and().formLogin();
+                .anyRequest().authenticated().and().formLogin()
+                .and()
+                .csrf().disable();
     }
 
-
-
-
-//    @Override
-//    public void configure(WebSecurity web) {
-//        //allow Swagger URL to be accessed without authentication
-//        web.ignoring().antMatchers("/v2/api-docs",//swagger api json
-//                "/swagger-resources/configuration/ui",//用来获取支持的动作
-//                "/swagger-resources",//用来获取api-docs的URI
-//                "/swagger-resources/configuration/security",//安全选项
-//                "/swagger-ui.html");
-//    }
 
     //静态资源配置
     @Override
@@ -44,7 +36,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 "/swagger-resources/configuration/ui",
                 "/swagger-resources",
                 "/swagger-resources/configuration/security",
-                "/swagger-ui.html");
+                "/swagger-resources/**",
+                "/swagger-ui.html",
+                "/webjars/**");
     }
-
 }
