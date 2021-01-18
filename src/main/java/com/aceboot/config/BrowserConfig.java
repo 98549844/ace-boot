@@ -16,8 +16,7 @@ public class BrowserConfig {
 
     static String url = "http://localhost:8088/";
     static String SwaggerUrl = "http://localhost:8088/swagger-ui.html";
-    // static String browser = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe ";
-    static String browser = "/Applications/Google Chrome.app";
+    static String browser = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe ";
 
     /**
      * 打开默认Browser

@@ -27,7 +27,6 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable();
     }
 
-
     //静态资源配置
     @Override
     public void configure(WebSecurity web) {
@@ -37,7 +36,6 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 "/swagger-resources",
                 "/swagger-resources/configuration/security",
                 "/swagger-resources/**",
-                "/swagger-ui.html",
-                "/webjars/**");
+                "/swagger-ui.html");
     }
 }
