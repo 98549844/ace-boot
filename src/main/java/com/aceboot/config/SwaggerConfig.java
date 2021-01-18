@@ -4,7 +4,10 @@ package com.aceboot.config;
 import com.google.common.base.Function;
 import com.google.common.base.Optional;
 import com.google.common.base.Predicate;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
 import springfox.documentation.RequestHandler;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
@@ -17,7 +20,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
-@ComponentScan("com.aceboot")
+//@ComponentScan("com.aceboot")
 @PropertySources({@PropertySource(value = "classpath:swagger2.properties", ignoreResourceNotFound = true, encoding = "UTF-8")})
 //@Profile("dev")
 public class SwaggerConfig {
@@ -80,8 +83,9 @@ public class SwaggerConfig {
      * version：版本号
      */
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("Welcome to Swagger").description("base on SpringBoot2 实现简单的信息的处理").version("1.0").license("version1.0").build();
+        return new ApiInfoBuilder().title("Ace API documents (Swagger)").description("base on SpringBoot").description("前后分离框架").version("1.0").license("version1.0").build();
     }
     //http://localhost:8088/swagger-ui.html
+
 
 }

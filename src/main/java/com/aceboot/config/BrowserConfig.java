@@ -4,6 +4,7 @@ package com.aceboot.config;
 import com.aceboot.util.Console;
 import org.springframework.context.annotation.Configuration;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Properties;
 
@@ -22,7 +23,7 @@ public class BrowserConfig {
      * 打开默认Browser
      */
 
-    public static void OpenDefaultBrowser() {
+    public static void OpenWindowsDefaultBrowser() {
         try {
             ProcessBuilder proc = new ProcessBuilder(browser, url);
             proc.start();
@@ -31,6 +32,12 @@ public class BrowserConfig {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static void OpenMacDefaultBrowser() throws IOException {
+
+        String Command = "open " + SwaggerUrl;
+        Process Child = Runtime.getRuntime().exec(Command);
     }
 
 
