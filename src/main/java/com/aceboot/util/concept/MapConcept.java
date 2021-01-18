@@ -1,8 +1,8 @@
 package com.aceboot.util.concept;
 
 import com.aceboot.data.DataGenerator;
-import com.aceboot.entity.jpa.TestEntity;
-import com.aceboot.entity.jpa.UserEntity;
+import com.aceboot.entity.dao.jpa.TestEntity;
+import com.aceboot.entity.dao.jpa.UserEntity;
 
 import java.util.ArrayList;
 import java.util.HashMap;

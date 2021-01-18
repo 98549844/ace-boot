@@ -1,6 +1,6 @@
 package com.aceboot.util;
 
-import com.aceboot.entity.jpa.EmployeeEntity;
+import com.aceboot.entity.dao.jpa.EmployeeEntity;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;

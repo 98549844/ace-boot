@@ -1,9 +1,9 @@
 package com.aceboot.data;
 
 
-import com.aceboot.entity.jpa.TestEntity;
-import com.aceboot.entity.jpa.UserEntity;
-import com.aceboot.entity.mybatis.TestEnt;
+import com.aceboot.entity.dao.jpa.TestEntity;
+import com.aceboot.entity.dao.jpa.UserEntity;
+import com.aceboot.entity.dao.mybatis.TestEnt;
 
 import java.util.ArrayList;
 import java.util.List;

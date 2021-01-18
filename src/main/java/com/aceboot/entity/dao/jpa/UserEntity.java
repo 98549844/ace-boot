@@ -1,9 +1,10 @@
-package com.aceboot.entity.jpa;
+package com.aceboot.entity.dao.jpa;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
 

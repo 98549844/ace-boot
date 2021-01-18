@@ -1,7 +1,7 @@
 package com.aceboot.util;
 
 import com.aceboot.data.DataGenerator;
-import com.aceboot.entity.jpa.TestEntity;
+import com.aceboot.entity.dao.jpa.TestEntity;
 import com.google.common.base.Function;
 import com.google.common.collect.Ordering;
 import org.apache.poi.ss.formula.functions.T;

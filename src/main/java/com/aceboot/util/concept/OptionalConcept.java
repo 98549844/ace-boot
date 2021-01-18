@@ -1,7 +1,7 @@
 package com.aceboot.util.concept;
 
 
-import com.aceboot.entity.mybatis.UserEnt;
+import com.aceboot.entity.dao.mybatis.UserEnt;
 
 import java.util.ArrayList;
 import java.util.List;

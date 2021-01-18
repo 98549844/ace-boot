@@ -1,4 +1,4 @@
-package com.aceboot.entity.mybatis;
+package com.aceboot.entity.dao.mybatis;
 
 import java.io.Serializable;
 import java.util.Date;
