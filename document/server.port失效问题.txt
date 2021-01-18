@@ -1,0 +1,8 @@
+1.  pom.xml
+    <packaging>war</packaging>
+    有机会令到
+    application.yml的
+    server.port 失效
+
+    解决放法:把war改成pom再rebuild,
+    然后再改回war再rebuild

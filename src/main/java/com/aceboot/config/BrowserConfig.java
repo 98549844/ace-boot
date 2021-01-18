@@ -2,7 +2,10 @@ package com.aceboot.config;
 
 
 import com.aceboot.util.Console;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.util.StringUtils;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -13,6 +16,7 @@ import java.util.Properties;
  */
 @Configuration
 public class BrowserConfig {
+    private static final Log log = LogFactory.getLog(BrowserConfig.class);
 
     static String url = "http://localhost:8088/";
     static String SwaggerUrl = "http://localhost:8088/swagger-ui.html";
@@ -34,8 +38,11 @@ public class BrowserConfig {
     }
 
     public static void OpenMacDefaultBrowser() throws IOException {
-
+        log.info("Home Page:\t\t" + url);
         String Command = "open " + SwaggerUrl;
+        if (StringUtils.hasText(SwaggerUrl)) {
+            log.info("Swagger2:\t\t" + SwaggerUrl);
+        }
         Process Child = Runtime.getRuntime().exec(Command);
     }
 
