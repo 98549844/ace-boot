@@ -4,7 +4,7 @@
     application.yml的
     server.port 失效
 
-    解决放法:把war改成pom再rebuild,
-    然后再改回war再rebuild
+    解决放法:把war改成pom, 然后maven reload,
+    然后再改回war再maven reload
 
 2. 在application configuration => Environment Variable : -server.port=8088

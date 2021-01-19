@@ -52,7 +52,7 @@ public class BrowserConfig {
         log.info("Home Page:\t\t" + macUrl);
         String Command = "open " + macSwaggerUrl;
         if (StringUtils.hasText(macSwaggerUrl)) {
-            log.info("SWAGGER:\t\t" + SwaggerUrl);
+            log.info("Swagger2:\t\t" + SwaggerUrl);
             Process Child = Runtime.getRuntime().exec(Command);
         }
     }
