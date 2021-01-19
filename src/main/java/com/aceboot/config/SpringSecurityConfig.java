@@ -22,9 +22,15 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/v2/*").permitAll()
                 .antMatchers("/csrf").permitAll()
                 .antMatchers("/").permitAll()
-                .anyRequest().authenticated().and().formLogin()
-                .and()
-                .csrf().disable();
+                //open spring security
+               //.anyRequest().authenticated()
+               //.and().formLogin()
+
+                //close spring security
+                .anyRequest().permitAll()
+                .and().logout().permitAll()
+                .and().csrf().disable();
+
     }
 
     //静态资源配置

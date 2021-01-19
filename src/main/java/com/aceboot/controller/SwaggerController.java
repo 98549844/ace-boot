@@ -5,6 +5,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 @RestController()
@@ -12,6 +13,9 @@ import org.springframework.web.bind.annotation.*;
 @Api(tags = "---SWAGGER---")
 public class SwaggerController {
     private final Log log = LogFactory.getLog(this.getClass());
+
+    @Value("${swagger.enable}")
+    private Boolean enable;
 
     @ResponseBody
     @RequestMapping(method = RequestMethod.GET)

@@ -2,3 +2,7 @@ server:
   port: 8088
   tomcat:
     uri-encoding: UTF-8
+
+#Swagger enable
+swagger:
+  enable: true
