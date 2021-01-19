@@ -6,3 +6,5 @@
 
     解决放法:把war改成pom再rebuild,
     然后再改回war再rebuild
+
+2. 在application configuration => Environment Variable : -server.port=8088

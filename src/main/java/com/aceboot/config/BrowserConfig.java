@@ -1,7 +1,10 @@
 package com.aceboot.config;
 
 
+import com.aceboot.util.ApplicationContextUtil;
 import com.aceboot.util.Console;
+import com.aceboot.util.DataTypeUtil;
+import com.aceboot.util.IpUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +12,7 @@ import org.springframework.util.StringUtils;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.util.Map;
 import java.util.Properties;
 
 /**
@@ -38,12 +42,19 @@ public class BrowserConfig {
     }
 
     public static void OpenMacDefaultBrowser() throws IOException {
-        log.info("Home Page:\t\t" + url);
-        String Command = "open " + SwaggerUrl;
-        if (StringUtils.hasText(SwaggerUrl)) {
-            log.info("Swagger2:\t\t" + SwaggerUrl);
+        ApplicationContextUtil app = new ApplicationContextUtil();
+        IpUtil ip = (IpUtil) app.getBeanByName("ipUtil");
+        Map m = ip.getClientHostInfo();
+
+        String macUrl = url.replace("8088", DataTypeUtil.integerToString((Integer) m.get("port")));
+        String macSwaggerUrl = SwaggerUrl.replace("8088", DataTypeUtil.integerToString((Integer) m.get("port")));
+
+        log.info("Home Page:\t\t" + macUrl);
+        String Command = "open " + macSwaggerUrl;
+        if (StringUtils.hasText(macSwaggerUrl)) {
+            log.info("SWAGGER:\t\t" + SwaggerUrl);
+            Process Child = Runtime.getRuntime().exec(Command);
         }
-        Process Child = Runtime.getRuntime().exec(Command);
     }
 
 
