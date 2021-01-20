@@ -9,6 +9,7 @@ import java.util.List;
 public class LogUtil {
     static private Log log = LogFactory.getLog(LogUtil.class);
 
+
     public static void printLog(List<Object> parm) {
         for (int i = 0; i < parm.size(); i++) {
             log.info(i + ". ***" + parm.get(i).toString() + "***");

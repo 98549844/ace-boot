@@ -42,18 +42,12 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 //.anyRequest().permitAll()
                 //.and().logout().permitAll()
 
-                .and().rememberMe().and().csrf().disable();
+                .and().rememberMe()
+                //.tokenValiditySeconds(84600).tokenRepository("保存用户token信息到数据库")
+                .and().csrf().disable();
 
     }
 
-/*    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .and().formLogin().loginPage("登陆页").permitAll()
-                .and().logout().logoutSuccessUrl("返回登陆页").permitAll()
-                .and().rememberMe()
-
-    }*/
 
     //静态资源配置
     @Override
