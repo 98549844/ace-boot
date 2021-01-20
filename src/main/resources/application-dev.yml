@@ -5,6 +5,14 @@ server:
     uri-encoding: UTF-8
 
 
-#Swagger enable
-#swagger:
-#  enabled: true
+
+
+#Spring Security config
+#springsecurityconfig:
+#  logoutsuccessurl: /
+#  permitall: /api
+#  deniedpage: deny
+#  urlroles: /**/ = admin;
+#            /**/user = admin,user
+
+

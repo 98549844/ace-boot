@@ -87,10 +87,7 @@ public class MapUtil {
             Object val = entry.getValue();
             log.info("Key: " + key.toString());
             log.info("value: " + val.toString());
-            log.info("");
-
         }
-
         log.info("The Map size is : " + map.size());
         log.info("key set : " + map.keySet());
     }
