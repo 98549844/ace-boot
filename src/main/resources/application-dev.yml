@@ -1,11 +1,7 @@
-
 server:
   port: 8088
   tomcat:
     uri-encoding: UTF-8
-
-
-
 
 #Spring Security config
 #springsecurityconfig:
@@ -15,4 +11,8 @@ server:
 #  urlroles: /**/ = admin;
 #            /**/user = admin,user
 
+logging:
+  file:
+    name: syslog.log
+    path: /Users/garlam/IdeaProjects/ace-boot/src/main/resources/log/
 

@@ -1,0 +1,322 @@
+2021-01-21 23:08:39.640  INFO 1508 --- [restartedMain] com.aceboot.AceBootApplication           : Starting AceBootApplication using Java 1.8.0_275 on garlam-mbp with PID 1508 (/Users/garlam/IdeaProjects/ace-boot/target/classes started by garlam in /Users/garlam/IdeaProjects/ace-boot)
+2021-01-21 23:08:39.641  INFO 1508 --- [restartedMain] com.aceboot.AceBootApplication           : The following profiles are active: dev
+2021-01-21 23:08:39.673  INFO 1508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-21 23:08:39.673  INFO 1508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-21 23:08:40.227  INFO 1508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2021-01-21 23:08:40.231  INFO 1508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 23:08:40.231  INFO 1508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 23:08:40.254  INFO 1508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-21 23:08:40.254  INFO 1508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 581 ms
+2021-01-21 23:08:40.462  INFO 1508 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-01-21 23:08:40.462  INFO 1508 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/ui'] with []
+2021-01-21 23:08:40.462  INFO 1508 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources'] with []
+2021-01-21 23:08:40.463  INFO 1508 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/security'] with []
+2021-01-21 23:08:40.463  INFO 1508 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-01-21 23:08:40.463  INFO 1508 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-01-21 23:08:40.478  INFO 1508 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3aa65d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a3ae6ce, org.springframework.security.web.header.HeaderWriterFilter@809ecbc, org.springframework.security.web.authentication.logout.LogoutFilter@73bacf3e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5548c7be, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@435dee5d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2fbbf3ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@553eafe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39d13a43, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@70388add, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1be1ea82, org.springframework.security.web.session.SessionManagementFilter@3537f2be, org.springframework.security.web.access.ExceptionTranslationFilter@2a9f7ef9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f88e704]
+2021-01-21 23:08:40.487  INFO 1508 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-21 23:08:40.523  INFO 1508 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:08:40.537  INFO 1508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 23:08:40.601  INFO 1508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2021-01-21 23:08:40.602  INFO 1508 --- [restartedMain] com.aceboot.util.IpUtil                  : onApplicationEvent: 
+2021-01-21 23:08:40.602  INFO 1508 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-21 23:08:40.610  INFO 1508 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-21 23:08:40.621  INFO 1508 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-21 23:08:40.684  INFO 1508 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getIndexUsingGET_1
+2021-01-21 23:08:40.694  INFO 1508 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSwaggerUsingGET_1
+2021-01-21 23:08:40.719  INFO 1508 --- [restartedMain] com.aceboot.AceBootApplication           : Started AceBootApplication in 1.321 seconds (JVM running for 1.629)
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : iterateMapKeyset: 
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: hostName
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: port
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 8088
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: ip
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 192.168.31.131
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: domain
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : The Map size is : 4
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.MapUtil                 : key set : [hostName, port, ip, domain]
+2021-01-21 23:08:40.722  INFO 1508 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:08:40.723  INFO 1508 --- [restartedMain] com.aceboot.config.BrowserConfig         : Home Page:		http://localhost:8088/
+2021-01-21 23:08:40.723  INFO 1508 --- [restartedMain] com.aceboot.config.BrowserConfig         : Swagger2:		http://localhost:8088/swagger-ui.html
+2021-01-21 23:08:40.872  INFO 1508 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 23:08:40.872  INFO 1508 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 23:08:40.873  INFO 1508 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-21 23:08:49.177  INFO 1508 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:10:01.263  INFO 1559 --- [restartedMain] com.aceboot.AceBootApplication           : Starting AceBootApplication using Java 1.8.0_275 on garlam-mbp with PID 1559 (/Users/garlam/IdeaProjects/ace-boot/target/classes started by garlam in /Users/garlam/IdeaProjects/ace-boot)
+2021-01-21 23:10:01.264  INFO 1559 --- [restartedMain] com.aceboot.AceBootApplication           : The following profiles are active: dev
+2021-01-21 23:10:01.285  INFO 1559 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-21 23:10:01.286  INFO 1559 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-21 23:10:01.775  INFO 1559 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2021-01-21 23:10:01.779  INFO 1559 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 23:10:01.779  INFO 1559 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 23:10:01.802  INFO 1559 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-21 23:10:01.802  INFO 1559 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 516 ms
+2021-01-21 23:10:02.053  INFO 1559 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-01-21 23:10:02.054  INFO 1559 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/ui'] with []
+2021-01-21 23:10:02.054  INFO 1559 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources'] with []
+2021-01-21 23:10:02.054  INFO 1559 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/security'] with []
+2021-01-21 23:10:02.054  INFO 1559 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-01-21 23:10:02.054  INFO 1559 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-01-21 23:10:02.072  INFO 1559 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47dc2cc2, org.springframework.security.web.context.SecurityContextPersistenceFilter@1207a261, org.springframework.security.web.header.HeaderWriterFilter@2c0d3f1, org.springframework.security.web.authentication.logout.LogoutFilter@1639a791, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b057a30, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@302171da, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@48897406, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1444f26e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5922dff5, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@7706f43a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@86efe09, org.springframework.security.web.session.SessionManagementFilter@13cfa, org.springframework.security.web.access.ExceptionTranslationFilter@3da3aaa0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50ab8cf7]
+2021-01-21 23:10:02.085  INFO 1559 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-21 23:10:02.118  INFO 1559 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:10:02.132  INFO 1559 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 23:10:02.238  INFO 1559 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2021-01-21 23:10:02.238  INFO 1559 --- [restartedMain] com.aceboot.util.IpUtil                  : onApplicationEvent: 
+2021-01-21 23:10:02.239  INFO 1559 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-21 23:10:02.247  INFO 1559 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-21 23:10:02.264  INFO 1559 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-21 23:10:02.289  INFO 1559 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getIndexUsingGET_1
+2021-01-21 23:10:02.301  INFO 1559 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSwaggerUsingGET_1
+2021-01-21 23:10:02.329  INFO 1559 --- [restartedMain] com.aceboot.AceBootApplication           : Started AceBootApplication in 1.276 seconds (JVM running for 1.993)
+2021-01-21 23:10:02.331  INFO 1559 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : iterateMapKeyset: 
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: hostName
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: port
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 8088
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: ip
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 192.168.31.131
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: domain
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : The Map size is : 4
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.MapUtil                 : key set : [hostName, port, ip, domain]
+2021-01-21 23:10:02.332  INFO 1559 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:10:02.333  INFO 1559 --- [restartedMain] com.aceboot.config.BrowserConfig         : Home Page:		http://localhost:8088/
+2021-01-21 23:10:02.333  INFO 1559 --- [restartedMain] com.aceboot.config.BrowserConfig         : Swagger2:		http://localhost:8088/swagger-ui.html
+2021-01-21 23:10:02.448  INFO 1559 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 23:10:02.448  INFO 1559 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 23:10:02.449  INFO 1559 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-21 23:11:47.727  INFO 1559 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:11:51.535  INFO 1598 --- [restartedMain] com.aceboot.AceBootApplication           : Starting AceBootApplication using Java 1.8.0_275 on garlam-mbp with PID 1598 (/Users/garlam/IdeaProjects/ace-boot/target/classes started by garlam in /Users/garlam/IdeaProjects/ace-boot)
+2021-01-21 23:11:51.538  INFO 1598 --- [restartedMain] com.aceboot.AceBootApplication           : The following profiles are active: dev
+2021-01-21 23:11:51.584  INFO 1598 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-21 23:11:51.584  INFO 1598 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-21 23:11:52.097  INFO 1598 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2021-01-21 23:11:52.102  INFO 1598 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 23:11:52.102  INFO 1598 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 23:11:52.127  INFO 1598 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-21 23:11:52.127  INFO 1598 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 543 ms
+2021-01-21 23:11:52.347  INFO 1598 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-01-21 23:11:52.347  INFO 1598 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/ui'] with []
+2021-01-21 23:11:52.347  INFO 1598 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources'] with []
+2021-01-21 23:11:52.347  INFO 1598 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/security'] with []
+2021-01-21 23:11:52.347  INFO 1598 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-01-21 23:11:52.347  INFO 1598 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-01-21 23:11:52.360  INFO 1598 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dd0759b, org.springframework.security.web.context.SecurityContextPersistenceFilter@24e1e289, org.springframework.security.web.header.HeaderWriterFilter@2b66ee4c, org.springframework.security.web.authentication.logout.LogoutFilter@37de84a1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77ca9ae1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2633f157, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@59ef1a7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d2d5dbf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24f52b86, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5b50429, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7456c925, org.springframework.security.web.session.SessionManagementFilter@376222e8, org.springframework.security.web.access.ExceptionTranslationFilter@49a11749, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@593c0048]
+2021-01-21 23:11:52.373  INFO 1598 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-21 23:11:52.407  INFO 1598 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:11:52.423  INFO 1598 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 23:11:52.526  INFO 1598 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2021-01-21 23:11:52.527  INFO 1598 --- [restartedMain] com.aceboot.util.IpUtil                  : onApplicationEvent: 
+2021-01-21 23:11:52.527  INFO 1598 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-21 23:11:52.535  INFO 1598 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-21 23:11:52.550  INFO 1598 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-21 23:11:52.576  INFO 1598 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getIndexUsingGET_1
+2021-01-21 23:11:52.586  INFO 1598 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSwaggerUsingGET_1
+2021-01-21 23:11:52.614  INFO 1598 --- [restartedMain] com.aceboot.AceBootApplication           : Started AceBootApplication in 1.371 seconds (JVM running for 1.693)
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : iterateMapKeyset: 
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: hostName
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: port
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 8088
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: ip
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 192.168.31.131
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: domain
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : The Map size is : 4
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.MapUtil                 : key set : [hostName, port, ip, domain]
+2021-01-21 23:11:52.616  INFO 1598 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:11:52.617  INFO 1598 --- [restartedMain] com.aceboot.config.BrowserConfig         : Home Page:		http://localhost:8088/
+2021-01-21 23:11:52.617  INFO 1598 --- [restartedMain] com.aceboot.config.BrowserConfig         : Swagger2:		http://localhost:8088/swagger-ui.html
+2021-01-21 23:11:52.741  INFO 1598 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 23:11:52.741  INFO 1598 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 23:11:52.742  INFO 1598 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-21 23:11:57.824  INFO 1598 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:12:05.447  INFO 1608 --- [restartedMain] com.aceboot.AceBootApplication           : Starting AceBootApplication using Java 1.8.0_275 on garlam-mbp with PID 1608 (/Users/garlam/IdeaProjects/ace-boot/target/classes started by garlam in /Users/garlam/IdeaProjects/ace-boot)
+2021-01-21 23:12:05.448  INFO 1608 --- [restartedMain] com.aceboot.AceBootApplication           : The following profiles are active: dev
+2021-01-21 23:12:05.474  INFO 1608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-21 23:12:05.474  INFO 1608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-21 23:12:05.927  INFO 1608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2021-01-21 23:12:05.930  INFO 1608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 23:12:05.930  INFO 1608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 23:12:05.952  INFO 1608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-21 23:12:05.952  INFO 1608 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 477 ms
+2021-01-21 23:12:06.143  INFO 1608 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-01-21 23:12:06.143  INFO 1608 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/ui'] with []
+2021-01-21 23:12:06.143  INFO 1608 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources'] with []
+2021-01-21 23:12:06.143  INFO 1608 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/security'] with []
+2021-01-21 23:12:06.144  INFO 1608 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-01-21 23:12:06.144  INFO 1608 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-01-21 23:12:06.159  INFO 1608 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3aa65d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a3ae6ce, org.springframework.security.web.header.HeaderWriterFilter@809ecbc, org.springframework.security.web.authentication.logout.LogoutFilter@73bacf3e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5548c7be, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@435dee5d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2fbbf3ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@553eafe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39d13a43, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@70388add, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1be1ea82, org.springframework.security.web.session.SessionManagementFilter@3537f2be, org.springframework.security.web.access.ExceptionTranslationFilter@2a9f7ef9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f88e704]
+2021-01-21 23:12:06.169  INFO 1608 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-21 23:12:06.200  INFO 1608 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:12:06.214  INFO 1608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 23:12:06.288  INFO 1608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2021-01-21 23:12:06.289  INFO 1608 --- [restartedMain] com.aceboot.util.IpUtil                  : onApplicationEvent: 
+2021-01-21 23:12:06.289  INFO 1608 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-21 23:12:06.297  INFO 1608 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-21 23:12:06.352  INFO 1608 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-21 23:12:06.374  INFO 1608 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getIndexUsingGET_1
+2021-01-21 23:12:06.384  INFO 1608 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSwaggerUsingGET_1
+2021-01-21 23:12:06.410  INFO 1608 --- [restartedMain] com.aceboot.AceBootApplication           : Started AceBootApplication in 1.152 seconds (JVM running for 1.421)
+2021-01-21 23:12:06.412  INFO 1608 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:12:06.412  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : iterateMapKeyset: 
+2021-01-21 23:12:06.412  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: hostName
+2021-01-21 23:12:06.412  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:12:06.412  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: port
+2021-01-21 23:12:06.412  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 8088
+2021-01-21 23:12:06.412  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: ip
+2021-01-21 23:12:06.412  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 192.168.31.131
+2021-01-21 23:12:06.413  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: domain
+2021-01-21 23:12:06.413  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:12:06.413  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : The Map size is : 4
+2021-01-21 23:12:06.413  INFO 1608 --- [restartedMain] com.aceboot.util.MapUtil                 : key set : [hostName, port, ip, domain]
+2021-01-21 23:12:06.413  INFO 1608 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:12:06.413  INFO 1608 --- [restartedMain] com.aceboot.config.BrowserConfig         : Home Page:		http://localhost:8088/
+2021-01-21 23:12:06.413  INFO 1608 --- [restartedMain] com.aceboot.config.BrowserConfig         : Swagger2:		http://localhost:8088/swagger-ui.html
+2021-01-21 23:12:06.530  INFO 1608 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 23:12:06.530  INFO 1608 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 23:12:06.530  INFO 1608 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-21 23:13:15.456  INFO 1608 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:13:18.194  INFO 1623 --- [restartedMain] com.aceboot.AceBootApplication           : Starting AceBootApplication using Java 1.8.0_275 on garlam-mbp with PID 1623 (/Users/garlam/IdeaProjects/ace-boot/target/classes started by garlam in /Users/garlam/IdeaProjects/ace-boot)
+2021-01-21 23:13:18.196  INFO 1623 --- [restartedMain] com.aceboot.AceBootApplication           : The following profiles are active: dev
+2021-01-21 23:13:18.217  INFO 1623 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-21 23:13:18.217  INFO 1623 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-21 23:13:18.700  INFO 1623 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2021-01-21 23:13:18.704  INFO 1623 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 23:13:18.704  INFO 1623 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 23:13:18.729  INFO 1623 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-21 23:13:18.729  INFO 1623 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 511 ms
+2021-01-21 23:13:18.974  INFO 1623 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-01-21 23:13:18.974  INFO 1623 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/ui'] with []
+2021-01-21 23:13:18.974  INFO 1623 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources'] with []
+2021-01-21 23:13:18.974  INFO 1623 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/security'] with []
+2021-01-21 23:13:18.974  INFO 1623 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-01-21 23:13:18.974  INFO 1623 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-01-21 23:13:18.990  INFO 1623 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dd0759b, org.springframework.security.web.context.SecurityContextPersistenceFilter@24e1e289, org.springframework.security.web.header.HeaderWriterFilter@2b66ee4c, org.springframework.security.web.authentication.logout.LogoutFilter@37de84a1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77ca9ae1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2633f157, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@59ef1a7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d2d5dbf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24f52b86, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5b50429, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7456c925, org.springframework.security.web.session.SessionManagementFilter@376222e8, org.springframework.security.web.access.ExceptionTranslationFilter@49a11749, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@593c0048]
+2021-01-21 23:13:19.001  INFO 1623 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-21 23:13:19.036  INFO 1623 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:13:19.050  INFO 1623 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 23:13:19.155  INFO 1623 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2021-01-21 23:13:19.155  INFO 1623 --- [restartedMain] com.aceboot.util.IpUtil                  : onApplicationEvent: 
+2021-01-21 23:13:19.155  INFO 1623 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-21 23:13:19.163  INFO 1623 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-21 23:13:19.177  INFO 1623 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-21 23:13:19.202  INFO 1623 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getIndexUsingGET_1
+2021-01-21 23:13:19.213  INFO 1623 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSwaggerUsingGET_1
+2021-01-21 23:13:19.240  INFO 1623 --- [restartedMain] com.aceboot.AceBootApplication           : Started AceBootApplication in 1.288 seconds (JVM running for 1.624)
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : iterateMapKeyset: 
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: hostName
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: port
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 8088
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: ip
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 192.168.31.131
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: domain
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : The Map size is : 4
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.MapUtil                 : key set : [hostName, port, ip, domain]
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:13:19.243  INFO 1623 --- [restartedMain] com.aceboot.config.BrowserConfig         : Home Page:		http://localhost:8088/
+2021-01-21 23:13:19.244  INFO 1623 --- [restartedMain] com.aceboot.config.BrowserConfig         : Swagger2:		http://localhost:8088/swagger-ui.html
+2021-01-21 23:13:19.371  INFO 1623 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 23:13:19.372  INFO 1623 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 23:13:19.373  INFO 1623 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-21 23:15:00.321  INFO 1623 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:15:56.087  INFO 1664 --- [restartedMain] com.aceboot.AceBootApplication           : Starting AceBootApplication using Java 1.8.0_275 on garlam-mbp with PID 1664 (/Users/garlam/IdeaProjects/ace-boot/target/classes started by garlam in /Users/garlam/IdeaProjects/ace-boot)
+2021-01-21 23:15:56.089  INFO 1664 --- [restartedMain] com.aceboot.AceBootApplication           : The following profiles are active: dev
+2021-01-21 23:15:56.125  INFO 1664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-21 23:15:56.126  INFO 1664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-21 23:15:56.653  INFO 1664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2021-01-21 23:15:56.671  INFO 1664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 23:15:56.671  INFO 1664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 23:15:56.696  INFO 1664 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-21 23:15:56.696  INFO 1664 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 570 ms
+2021-01-21 23:15:56.899  INFO 1664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-01-21 23:15:56.899  INFO 1664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/ui'] with []
+2021-01-21 23:15:56.899  INFO 1664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources'] with []
+2021-01-21 23:15:56.900  INFO 1664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/security'] with []
+2021-01-21 23:15:56.900  INFO 1664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-01-21 23:15:56.900  INFO 1664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-01-21 23:15:56.915  INFO 1664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31e4e136, org.springframework.security.web.context.SecurityContextPersistenceFilter@1737a86, org.springframework.security.web.header.HeaderWriterFilter@302e51a7, org.springframework.security.web.authentication.logout.LogoutFilter@2e084f1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5927efa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@703bb40d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@87ae430, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44641de4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48386bac, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@24a9bb16, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61e28f22, org.springframework.security.web.session.SessionManagementFilter@636b386f, org.springframework.security.web.access.ExceptionTranslationFilter@25c09f3b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13565cee]
+2021-01-21 23:15:56.926  INFO 1664 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-21 23:15:56.962  INFO 1664 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:15:56.978  INFO 1664 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 23:15:57.095  INFO 1664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2021-01-21 23:15:57.096  INFO 1664 --- [restartedMain] com.aceboot.util.IpUtil                  : onApplicationEvent: 
+2021-01-21 23:15:57.096  INFO 1664 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-21 23:15:57.104  INFO 1664 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-21 23:15:57.119  INFO 1664 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-21 23:15:57.145  INFO 1664 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getIndexUsingGET_1
+2021-01-21 23:15:57.156  INFO 1664 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSwaggerUsingGET_1
+2021-01-21 23:15:57.182  INFO 1664 --- [restartedMain] com.aceboot.AceBootApplication           : Started AceBootApplication in 1.348 seconds (JVM running for 1.697)
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : iterateMapKeyset: 
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: hostName
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: port
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 8088
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: ip
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 192.168.31.131
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: domain
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : The Map size is : 4
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.MapUtil                 : key set : [hostName, port, ip, domain]
+2021-01-21 23:15:57.185  INFO 1664 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:15:57.186  INFO 1664 --- [restartedMain] com.aceboot.config.BrowserConfig         : Home Page:		http://localhost:8088/
+2021-01-21 23:15:57.186  INFO 1664 --- [restartedMain] com.aceboot.config.BrowserConfig         : Swagger2:		http://localhost:8088/swagger-ui.html
+2021-01-21 23:15:57.312  INFO 1664 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 23:15:57.313  INFO 1664 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 23:15:57.314  INFO 1664 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-21 23:16:37.239  INFO 1664 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:16:39.862  INFO 1680 --- [restartedMain] com.aceboot.AceBootApplication           : Starting AceBootApplication using Java 1.8.0_275 on garlam-mbp with PID 1680 (/Users/garlam/IdeaProjects/ace-boot/target/classes started by garlam in /Users/garlam/IdeaProjects/ace-boot)
+2021-01-21 23:16:39.863  INFO 1680 --- [restartedMain] com.aceboot.AceBootApplication           : The following profiles are active: dev
+2021-01-21 23:16:39.887  INFO 1680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-21 23:16:39.887  INFO 1680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-21 23:16:40.346  INFO 1680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2021-01-21 23:16:40.349  INFO 1680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 23:16:40.350  INFO 1680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 23:16:40.372  INFO 1680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-21 23:16:40.372  INFO 1680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 484 ms
+2021-01-21 23:16:40.571  INFO 1680 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/v2/api-docs'] with []
+2021-01-21 23:16:40.571  INFO 1680 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/ui'] with []
+2021-01-21 23:16:40.571  INFO 1680 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources'] with []
+2021-01-21 23:16:40.571  INFO 1680 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/configuration/security'] with []
+2021-01-21 23:16:40.571  INFO 1680 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-resources/**'] with []
+2021-01-21 23:16:40.571  INFO 1680 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/swagger-ui.html'] with []
+2021-01-21 23:16:40.583  INFO 1680 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c9b98d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@f677432, org.springframework.security.web.header.HeaderWriterFilter@16fc0a4, org.springframework.security.web.authentication.logout.LogoutFilter@28c80617, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3767c09, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5399cf7f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5e58f766, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d4a4c54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d2c35d7, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3efe6214, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@137bc07b, org.springframework.security.web.session.SessionManagementFilter@35c7a5f2, org.springframework.security.web.access.ExceptionTranslationFilter@56ca6109, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@259e5fad]
+2021-01-21 23:16:40.593  INFO 1680 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-21 23:16:40.625  INFO 1680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 23:16:40.639  INFO 1680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 23:16:40.712  INFO 1680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2021-01-21 23:16:40.712  INFO 1680 --- [restartedMain] com.aceboot.util.IpUtil                  : onApplicationEvent: 
+2021-01-21 23:16:40.713  INFO 1680 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-21 23:16:40.719  INFO 1680 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-21 23:16:40.763  INFO 1680 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-21 23:16:40.783  INFO 1680 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getIndexUsingGET_1
+2021-01-21 23:16:40.792  INFO 1680 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSwaggerUsingGET_1
+2021-01-21 23:16:40.816  INFO 1680 --- [restartedMain] com.aceboot.AceBootApplication           : Started AceBootApplication in 1.154 seconds (JVM running for 1.437)
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : iterateMapKeyset: 
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: hostName
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: port
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 8088
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: ip
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : value: 192.168.31.131
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : Key: domain
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : value: garlam-mbp
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : The Map size is : 4
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.MapUtil                 : key set : [hostName, port, ip, domain]
+2021-01-21 23:16:40.818  INFO 1680 --- [restartedMain] com.aceboot.util.IpUtil                  : getClientHostInfo: 
+2021-01-21 23:16:40.819  INFO 1680 --- [restartedMain] com.aceboot.config.BrowserConfig         : Home Page:		http://localhost:8088/
+2021-01-21 23:16:40.819  INFO 1680 --- [restartedMain] com.aceboot.config.BrowserConfig         : Swagger2:		http://localhost:8088/swagger-ui.html
+2021-01-21 23:16:40.935  INFO 1680 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 23:16:40.935  INFO 1680 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 23:16:40.936  INFO 1680 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-21 23:19:15.357  INFO 1680 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

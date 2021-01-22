@@ -18,14 +18,7 @@ public class ProductEntity implements Serializable {
 
 
 
-    public ProductEntity() {
-    }
 
-    public ProductEntity(String item, Double price, String category) {
-        this.item = item;
-        this.price = price;
-        this.category = category;
-    }
 
 
 }
