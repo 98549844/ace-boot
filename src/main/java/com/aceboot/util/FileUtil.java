@@ -9,29 +9,122 @@ import java.util.*;
 
 
 public class FileUtil {
-    static private Log log = LogFactory.getLog(FileUtil.class);
+    static private Log log = LogFactory.getLog(LogUtil.class);
 
-
-    static String path = "";
-    static String fileName = "";
+    static String path = "/Users/garlam/IdeaProjects/ace-boot/";
+    //static String path = "C:\\project\\spring-boot\\POLICE\\redmine\\15392\\log\\";
+    static String fileName = "log.sql";
     static String slash = "\\";
     static String dot = ".";
     static String ext = "";
     static String fullPath = path + slash + fileName + slash + dot + ext;
 
     public static void main(String[] args) throws IOException {
-        String p = "C:\\Users\\user\\Downloads\\accord.txt";
-        File f = new File(p);
 
-        FileUtil fileUtil = new FileUtil();
-        fileUtil.read(p);
-        System.out.println(fileUtil.read(p).toString());
+        List<String> ls = getFileNames(path);
+
+    }
+
+    private static boolean isSlash(String path) {
+        boolean isSlash = false;
+        String end = path.substring(path.length() - 1);
+        if (!path.isEmpty() && (end.equals("/") || end.equals("\\"))) {
+            isSlash = true;
+        } else {
+            log.info("Missing slash");
+        }
+        return isSlash;
+    }
+
+    private static String addSlashIfMissing(String path) {
+        if (!isSlash(path)) {
+            String[] t = path.split("/");
+            if (t.length > 0) {
+                path = path + "/";
+            } else {
+                path = path + "\\\\";
+            }
+        }
+        return path;
+    }
+
+    /**
+     * 用缓冲区读写，来提升读写效率。
+     */
+    private static void CopyFileWithNewName(String path, List<String> fileNames, String ext, Boolean delFile) {
+        addSlashIfMissing(path);
+
+        log.info("Start writing file ...");
+        for (String fileName : fileNames) {
+            FileWriter fw = null;
+            FileReader fr = null;
+            String newFileName = "";
+            if (!fileName.substring(fileName.length() - 4).equals(ext)) {
+                newFileName = fileName.substring(0, fileName.length() - 4) + ext;
+            } else {
+                newFileName = "checked_" + fileName;
+            }
+
+            try {
+                fr = new FileReader(path + fileName);//读
+                fw = new FileWriter(path + newFileName);//写
+                char[] buf = new char[1024];//缓冲区
+                int len;
+                while ((len = fr.read(buf)) != -1) {
+                    fw.write(buf, 0, len);//读几个写几个
+                }
+
+                File file = new File(path + fileName);
+                if (delFile != null && delFile && file.exists()) {
+                    file.delete();
+                }
+
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            } finally {
+                if (fr != null) {
+                    try {
+                        fr.close();
+                    } catch (IOException e) {
+                        System.out.println(e.getMessage());
+                    }
+                }
+                if (fw != null) {
+                    try {
+                        fw.flush();
+                        fw.close();
+                    } catch (IOException e) {
+                        System.out.println(e.getMessage());
+                    }
+                }
+            }
+        }
+        log.info("File writing complete !!!");
+    }
+
+
+    public static ArrayList<String> getFileNames(String path) {
+        FileUtil.addSlashIfMissing(path);
+
+        ArrayList<String> files = new ArrayList<String>();
+        File file = new File(path);
+        File[] tempLists = file.listFiles();
+        for (int i = 0; i < tempLists.length; i++) {
+            if (tempLists[i].isFile() && !tempLists[i].getName().equals(".DS_Store")) {
+                files.add(tempLists[i].getName());//file name
+                // files.add(tempLists[i].toString());//full path
+            }
+        }
+        for (int i = 0; i < files.size(); i++) {
+            log.info(files.get(i));
+        }
+        return files;
     }
 
     public Map<String, Object> read(String path) throws IOException {
         File f = new File(path);
         // 建立一个输入流对象reader
-        InputStreamReader reader = new InputStreamReader(new FileInputStream(f), "UTF-16LE");
+        InputStreamReader reader = new InputStreamReader(new FileInputStream(f), "UTF-8");
         // 建立一个对象，它把文件内容转成计算机能读懂的语言
         BufferedReader br = new BufferedReader(reader);
         String line;
@@ -142,7 +235,7 @@ public class FileUtil {
             type = "List";
         }
 
-        if (fileStatus(filePath, fileName)) {
+        if (filrStatus(filePath, fileName)) {
             FileOutputStream fop = null;
 
             try {
@@ -171,8 +264,8 @@ public class FileUtil {
                 }
 
                 outputStreamWriter.close();
-               // fop.flush();
-               // fop.close();
+                // fop.flush();
+                // fop.close();
 
                 log.info("File writing complete");
             } catch (IOException e) {
@@ -190,8 +283,11 @@ public class FileUtil {
 
     }
 
+
     //check file and dir status
-    public static boolean fileStatus(String filePath, String fileName) {
+    public static boolean filrStatus(String filePath, String fileName) {
+
+
         //check dir exist
         File folder = new File(filePath);
         if (!folder.exists() && !folder.isDirectory()) {
@@ -200,6 +296,7 @@ public class FileUtil {
         } else {
             log.info("Directory is exist");
         }
+
 
         //check file exist
         boolean isOK = false;
@@ -226,7 +323,6 @@ public class FileUtil {
                 isOK = true;
             } else {
                 log.info("File can't write");
-
                 isOK = false;
             }
         }
