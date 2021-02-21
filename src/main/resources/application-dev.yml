@@ -13,6 +13,6 @@ server:
 
 logging:
   file:
-    name: syslog.log
+    name: console.log
     path: /Users/garlam/IdeaProjects/ace-boot/src/main/resources/log/
 
