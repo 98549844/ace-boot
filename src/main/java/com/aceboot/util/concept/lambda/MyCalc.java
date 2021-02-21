@@ -13,10 +13,8 @@ public class MyCalc {
 
         Calc calc2 = (a, b) -> {
             int c = a + b;
-            System.out.println("calc2: " + (c));
+            System.out.println("lambda calc2: " + (c));
             return c;
         };
-        result = calc2.add(4, 8);
-        System.out.println("result: " + result);
     }
 }

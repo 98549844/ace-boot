@@ -8,6 +8,7 @@ public class CalcImpl implements Calc {
         return a+b;
     }
 
+
     public Integer subtract(int a, int b) {
         return a-b;
     }
