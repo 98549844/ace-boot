@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController()
 @RequestMapping("/index")
-@Api(tags = "---Index---")
+@Api(tags = "index")
 public class IndexController {
     private final Log log = LogFactory.getLog(this.getClass());
 

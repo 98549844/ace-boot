@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController()
 @RequestMapping("/swagger")
-@Api(tags = "---SWAGGER---")
+@Api(tags = "swagger")
 public class SwaggerController {
     private final Log log = LogFactory.getLog(this.getClass());
 
