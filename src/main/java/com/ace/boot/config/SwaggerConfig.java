@@ -44,7 +44,7 @@ public class SwaggerConfig {
                 .enable(enabled)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.aceboot.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.ace.boot.controller"))
                 //.apis(SwaggerConfig.basePackage("com.controller,com.restController"))
                 .paths(PathSelectors.any()).build();
     }
